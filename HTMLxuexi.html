@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>张发盛的练习</title>
+        <style>
+            span{
+                 color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>练习diy</h1><!--标题练习-->
+        
+        <!--&nbsp空格练习-->
+        <header>腾讯头部标签&nbsp;&nbsp;再来一个头部&nbsp;&nbsp;</header><!--header主页头部标签-->
+
+
+        <section><!--section专栏练习-->
+
+        <div><!--div模块练习-->
+            <h2>百度一下</h2><br> <!--br换行练习，空标签-->
+            
+            <!--img图片练习 alt是加载失败显示 title鼠标滑过显示文本-->
+            <img src="C:\Users\Administrator\Desktop\result.PNG" alt="图片加载失败" title="百度的图片"/><a href="https://www.baidu.com" title="百度的链接">百度一下</a>
+
+            <!--ol-li有序列表练习-->
+            <ol>
+                <!--使用a链接在当前窗口打开要加<base barget="_parent">不然无法在当前窗口打开-->
+
+                <li><!--a标签超链接练习，属性href和target，target可赋值_self在当前窗口打开，_blank在新的窗口打开-->
+                    <base target="_parent"/><a href="https://www.taobao.com" title="淘宝" target="_self">买东西</a>
+                </li>
+                <li>卖东西</li>
+                <li>卖卖东西</li>
+            </ol>    
+        </div>
+        </section> 
+
+        <!--section专栏练习-->
+        <section>snonosdnon</section>
+
+        <!--footer底部练习-->
+        <footer>底部的腾讯网</footer>
+
+        <!--p段落练习-->
+        <p>侧边栏练习</p>
+
+        <!--aside侧边栏练习-->
+        <aside>侧边栏<br><hr>
+           home<br><hr>
+           回车
+        </aside>
+
+        <!--ul-li 无序列表-->
+        <ul>
+            <li>前端工程师2021</li>
+            <li>Vite零基础快速入门</li>
+            <li>vue3.0实现todolist</li>
+        </ul>
+        
+        <!--table练习，属性border赋值数字会有表格线，没赋值就没有-->
+        <table border="1">
+            <caption>前端学习</caption>  <!--caption练习，表格标题-->>
+            <th>姓名</th>              <!--th表格表头一行，有加粗效果-->
+            <th>电话</th>
+            <th>性别</th>
+            <th>联系方式</th>
+            <tr>                        <!--每个tr代表一行-->
+                <td>张发盛</td>          <!--每个td代表一列-->
+                <td>17520488059</td>
+                <td>男</td>
+                <td>手机</td>
+            </tr>
+            <tr>
+                <td>雷庆</td>
+                <td>111111111</td>
+                <td>女</td>
+                <td>捉鸡</td>
+            </tr>
+
+            <!--hr分割线练习，实体灰线(空标签)不会显示在表格前-->
+            <hr>
+
+            <!--thead  tbody  tfoot练习，分别是表头部，表内容，表底部，主要适用于统计数据的表格-->
+            <table border="1">
+
+                <caption>thead和tbody和tfoot练习</caption>
+                <thead>
+                    <th>前端/日期</th>
+                    <th>html</th>
+                    <th>css</th>
+                    <th>javascript</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2021-09-23</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2021-09-24</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2021-09-25</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2021-09-25</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2021-09-25</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2021-09-25</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2021-09-25</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2021-09-25</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2021-09-25</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>总计</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!--form使用表带和用户交互，表单控件有，文本框，文本域，按钮，单选框，复选框等，控件必须在from内-->
+            <!--method是传送方式，历史get和post，action是传送到的地方，例如php网页-->
+         <form method="GET" action="sava.php" >
+          <!--文本框/密码框练习，必须在form标签内-->
+          <input type="text" name="文本输入框" value="" placeholder="请输入账号"><br>
+          <input type="password" name="密码" value="" placeholder="请输入密码">
+         </form>
+         
+         <form method="POST" action="sava.php">
+          
+          <!--数字输入框练习-->
+          <input type="number"  value="" placeholder="请输入数字">
+          
+          <!--网址输入框-->
+          <br>
+          <input type="url" value="https://www.baidu.com" placeholder="请输入链接">
+          <br>
+         
+          <!--邮箱输入框-->
+          <input type="email" value="" placeholder="请输入邮箱">
+          <br>
+
+          <!--文本域练习-->
+          <textarea name="文本框" id="1" cols="50" rows="30" >
+            请输入内容
+
+          </textarea>
+         </form>
+
+         <form action="sava.php" method="POST">
+          <!--label标签，为input输入框穿上衣服，要传input  id名称，作用是点击label标签的可以快速选中组件-->
+          <label for="texts">账号</label><br>
+          <input type="text" id="texts" value="" placeholder="请输入账号">
+         </form>
+ 
+         <!--单选框练习--><!--多选框练习-->
+         <form action="sava.php" method="GET"><!--注意，要文本内容就在form可以输入，会直接显示-->
+             <label>你喜欢谁？<br></label>
+            <input type="radio" value="张发盛" name="单选框" checked="checked">张发盛<br> <!--注意：同一组的单选按钮，name一定要一致，不然起不到单选效果-->
+            <input type="radio" value="雷庆" name="单选框">雷庆
+            
+            
+            <br>
+            <br>
+            你喜欢谁？可多选<br>
+            <input type="checkbox" value="张发盛" name="多选框">张发盛<br>
+            <input type="checkbox" value="雷庆" name="多选框">雷庆
+
+
+         </form>  
+
+         <!--下拉框练习-->
+         <form action="sava.php" method="POST">
+            <select name="下拉框" id="2">
+                <option value="张发盛">张发盛</option>
+                <option value="雷庆">雷庆</option>
+                <option value="蓬莱" selected="selected">蓬莱</option>
+            </select>
+
+         </form>
+
+         <!--提交按钮练习-->
+         <form action="sava.php" method="POST">
+                <label for="">填写你喜欢的人</label>
+                <input type="text" name="你喜欢的人" value="" placeholder="请输入你喜欢的人">
+                <input type="submit" name="张发盛" value="提交"> <!--当input为submit时为提交按钮-->
+
+         </form>
+
+         <!--重置按钮练习-->
+         <form action="sava.php" method="POST">
+            <label for="">请选择你喜欢的人</label>
+            <select name="多选" id="4">
+                <option value="霸刀">霸刀</option>
+                <option value="蓬莱">蓬莱</option>
+                <option value="七秀">七秀</option>
+                <option value="丐帮">丐帮</option>
+                <option value="明教">明教</option>
+                <option value="五毒">五毒</option>
+            </select>
+            <input type="submit" value="确认" name="按钮">
+            <input type="reset" value="重置" name="111"><!--当type为reset时为重置按钮-->
+
+
+         </form>
+
+    </body>
+</html>
+
+
